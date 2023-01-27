@@ -24,9 +24,9 @@ const StarshipList = () => {
           {StarshipList.map(starship =>
             <div key={starship.id}>
               <Link to='/starship' state={{ starship }}>
-                <button>
+                <button className="starship-list-boxes">
                   {starship.name}
-                  </button>
+                </button>
               </Link>
             </div>
           )}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-// import { getStarshipDetails } from "../../../services/sw-api";
+import { getStarshipDetails } from "../../services/sw-api";
 import { Link, useLocation } from "react-router-dom";
 
 
