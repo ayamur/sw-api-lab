@@ -1,6 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import StarshipDetails from './pages/StarshipList/StarshipDetails/StarshipDetails';
+import StarshipDetails from './pages/StarshipDetails/StarshipDetails';
+import StarshipList from './pages/StarshipList/StarshipList';
 
 
 const App = () => {

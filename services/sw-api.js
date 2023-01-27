@@ -1,6 +1,12 @@
 //The API location we are making requests to:
-const baseUrl = "https://swapi.dev/"
+const BaseUrl = "https://swapi.dev/api/starships/"
 
 export async function getAllStarships() {
-  
+  const res = await fetch(`${BaseUrl}`)
+  return res.json()
+}
+
+export async function getStarshipDetails(id) {
+  const res = await fetch(`${BaseUrl}/${:id}`)
+  return res.json()
 }
