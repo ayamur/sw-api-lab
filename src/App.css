@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: rgb(30, 3, 42);
+  color: bisque;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 35px;
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  background-color: palegoldenrod;
+  color: indigo;
+  font-size: 20px;
+  
+}

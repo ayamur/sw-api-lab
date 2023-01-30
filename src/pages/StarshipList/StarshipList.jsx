@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { getStarshipList } from "../../services/sw-api";
-import { Link, } from "react-router-dom";
+import { getStarshipList } 
+from "../../services/sw-api";
+import { Link } from "react-router-dom";
 
 const StarshipList = () => {
-  const [StarshipList, setStarshipList] = useState([{}])
+  const [starshipList, setStarshipList] = useState([])
 
   useEffect(() => {
     const fetchStarshipList = async () => {
@@ -19,11 +20,11 @@ const StarshipList = () => {
       <h3>
         Pew Pew Vroom Vroom Starship List!
       </h3>
-      {StarshipList.length ?
+      {starshipList.length ?
         <>
-          {StarshipList.map(starship =>
-            <div key={starship.id}>
-              <Link to='/starship' state={{ starship }}>
+          {starshipList.map((starship, idx) =>
+            <div key={idx}>
+              <Link to="/id" state={{ starship }}>
                 <button className="starship-list-boxes">
                   {starship.name}
                 </button>
@@ -33,7 +34,7 @@ const StarshipList = () => {
         </>
         :
         <>
-          <h4> Starships flying in momentarily...</h4>
+          <h1>Starships flying in momentarily!</h1>
         </>
       }
     </>
